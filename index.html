@@ -1,0 +1,356 @@
+{
+  "dns": {
+    "servers": [
+      {
+        "tag": "cloudflare",
+        "address": "1.1.1.1"
+      },
+      {
+        "tag": "google",
+        "address": "8.8.8.8"
+      }
+    ]
+  },
+  "inbounds": [
+    {
+      "type": "mixed",
+      "tag": "mixed-in",
+      "listen": "127.0.0.1",
+      "listen_port": 10808
+    }
+  ],
+  "outbounds": [
+    {
+      "type": "trojan",
+      "tag": "WHO",
+      "server": "www.who.int",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Shopify",
+      "server": "shopify.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Shopify-WWW",
+      "server": "www.shopify.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Udacity",
+      "server": "www.udacity.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "WhatIsMyIP",
+      "server": "www.whatismyip.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Glassdoor",
+      "server": "www.glassdoor.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Cloudflare-Time",
+      "server": "time.cloudflare.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "DigitalOcean",
+      "server": "www.digitalocean.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Udemy",
+      "server": "www.udemy.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "4chan",
+      "server": "www.4chan.org",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Gov-SE",
+      "server": "www.gov.se",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "trojan",
+      "tag": "Visa-Korea",
+      "server": "www.visakorea.com",
+      "server_port": 8443,
+      "password": "trojan",
+      "tls": {
+        "enabled": true,
+        "server_name": "trojan-worker.facebookbaga05.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        }
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/?ed=2560",
+        "headers": {
+          "Host": "trojan-worker.facebookbaga05.workers.dev"
+        }
+      }
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "WHO",
+        "Shopify",
+        "Shopify-WWW",
+        "Udacity",
+        "WhatIsMyIP",
+        "Glassdoor",
+        "Cloudflare-Time",
+        "DigitalOcean",
+        "Udemy",
+        "4chan",
+        "Gov-SE",
+        "Visa-Korea"
+      ],
+      "url": "https://www.gstatic.com/generate_204",
+      "interval": "5m"
+    },
+    {
+      "type": "selector",
+      "tag": "proxy",
+      "outbounds": [
+        "auto",
+        "WHO",
+        "Shopify",
+        "Shopify-WWW",
+        "Udacity",
+        "WhatIsMyIP",
+        "Glassdoor",
+        "Cloudflare-Time",
+        "DigitalOcean",
+        "Udemy",
+        "4chan",
+        "Gov-SE",
+        "Visa-Korea"
+      ]
+    }
+  ],
+  "route": {
+    "rules": [
+      {
+        "protocol": "dns",
+        "outbound": "dns-out"
+      }
+    ],
+    "final": "proxy"
+  }
+}
